@@ -21,7 +21,7 @@ function mayoriaDeEdad(edad) {
   if(edad >= 18){
     return "Allowed";
   } else {
-    return "Not Allowed";
+    return "Not allowed";
   }
 }
   
@@ -87,7 +87,7 @@ function colors(color) {
       return 'This is orange';
       break;
     default:
-      return'Color not fund';
+      return'Color not found';
   }
 }
 
@@ -187,10 +187,11 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
-  for( var i=0 ; i<11 ; i++ ){
-    arrayTablaDel6.push(6 * i);
+  var arrayTablaDel6 = []
+  for (var i = 0; i < 11; i++) {
+        arrayTablaDel6.push(6 * i)
   }
-  return arrayTablaDel6.push(6 * i);
+  return arrayTablaDel6
 }
 
 function tieneTresDigitos(numero){
@@ -208,6 +209,7 @@ function doWhile(numero) {
     i++;
     numero += 5;
   }while(i<8);
+  return numero;
 }
 
 
